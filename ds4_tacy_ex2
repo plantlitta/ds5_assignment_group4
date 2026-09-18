@@ -7,5 +7,7 @@ print(c)
 ''' 
 functions
 
-a) mandelbrot(n): 
+function 1: mandelbrot(n): a_n = a_(n-1)^2 + c
+
+function 2: 
 '''
