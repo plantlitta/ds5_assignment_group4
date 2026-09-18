@@ -21,18 +21,19 @@ with open(file_path, 'r') as file: # 1. function to open file and make it a dict
 #
 
 
-total = sum(float(record['Grade']) for record in records) # 2. calculating total function
-average = total / len(records)
+#total = calc_tot(records) # 2. calculating total function
+#average = total / len(records)
 
 #
+def calc_tot(n): #as input has a column
+    total = sum(float(record['Grade']) for record in n)
+    
 
 
+    return total
 
-
-
-
-
-
+total = calc_tot(records) # 2. calculating total function
+average = total / len(records)
 
 #
 
@@ -55,19 +56,21 @@ filtered_records = [record for record in records if float(record['Grade']) >= 80
 
 print("Student Report")
 print("--------------")
-for record in filtered_records: # 4. displaying results function
+'''for record in filtered_records: # 4. displaying results function
     print(f"Name: {record['Name']}")
     print(f"Grade: {record['Grade']}")
-    print("--------------------")
+    print("--------------------")'''
 
 #
 
+def filter_list(b):
+    for record in b: # 4. displaying results function
+    print(f"Name: {record['Name']}")
+    print(f"Grade: {record['Grade']}")
+    print("--------------------")
+    return None
 
-
-
-
-
-
+filter_list(filtered_records)
 
 
 #
