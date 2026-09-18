@@ -9,7 +9,7 @@ with open(file_path, 'r') as file: # 1. function to open file and make it a dict
 
 
 #
-
+def import_data()
 
 
 

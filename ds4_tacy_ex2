@@ -3,3 +3,9 @@ import random as r
 
 c = complex(1,2)
 print(c)
+
+''' 
+functions
+
+a) mandelbrot(n): 
+'''
